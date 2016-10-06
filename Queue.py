@@ -1,3 +1,6 @@
+# from queue import *
+# q = Queue()
+
 class Node:
     def __init__(self, value=None, next=None, prev=None):
         self.value = value
@@ -11,7 +14,8 @@ class Queue:
         self.back = None
         self.front = None
     def enqueue(self, elem):
-        if(self.back == None):
+        # q.put(elem)
+        if(self.back == None):  #q.empty()
             self.front = Node(elem) 
             self.back = self.front
         else:
@@ -19,6 +23,7 @@ class Queue:
             self.back = Node(elem, n)
             n.prev = self.back
     def dequeue(self):
+        # q.get()
         n = self.front
         if n.prev != None:
             self.front = self.front.prev
