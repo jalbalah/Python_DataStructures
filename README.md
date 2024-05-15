@@ -1,1 +1,1 @@
-###### Repo is random projects, most coding practice is kept on a private Repo for IP legal reasons
+###### This is not meant for use and includes experiments that were not finished or made for accuracy
